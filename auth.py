@@ -6,7 +6,7 @@ import pathlib
 
 username = getpass.getuser()
 database_path = pathlib.Path("/home/" + username + "/Documents/Command Line Journal/commandlinejournal.db")
-app_key = "YOUR KEY"
+app_key = "YOUR KEY" #You can create a new dropbox app from here: https://www.dropbox.com/developers/apps/create
 app_secret = "YOUR SECRET"
 auth_flow = DropboxOAuth2FlowNoRedirect(app_key, app_secret)
 auth_url = auth_flow.start()
